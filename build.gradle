@@ -10,6 +10,7 @@ buildscript {
         glide_version = "4.12.0"
         datastore_version = "1.0.0"
         work_manager_version = "2.7.1"
+        retrofit_version = "2.9.0"
     }
 
     dependencies {
