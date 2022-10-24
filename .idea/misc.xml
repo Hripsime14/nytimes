@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/avetik.avetisyan/AndroidStudioProjects/NYTimes/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/avetik.avetisyan/AndroidStudioProjects/NYTimes/app/src/main/res/layout/article_single_item.xml" value="0.10914855072463768" />
+        <entry key="..\:/Users/avetik.avetisyan/AndroidStudioProjects/NYTimes/app/src/main/res/layout/fragment_most_popular_articles.xml" value="0.11145833333333334" />
       </map>
     </option>
   </component>

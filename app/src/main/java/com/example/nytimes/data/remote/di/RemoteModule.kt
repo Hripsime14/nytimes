@@ -1,7 +1,11 @@
 package com.example.nytimes.data.remote.di
 
+import com.example.nytimes.data.remote.datasource.MostPopularArticlesRemoteDataSource
+import com.example.nytimes.data.remote.datasource.datasourceimpl.MostPopularArticlesRemoteDataSourceImpl
 import com.example.nytimes.data.remote.network.ApiClients
 import com.example.nytimes.data.remote.network.interceptor.AuthInterceptor
+import com.example.nytimes.data.repo.MostPopularArticlesRepo
+import com.example.nytimes.data.repo.repoimpl.MostPopularArticlesRepoImpl
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -42,4 +46,6 @@ fun remoteModule(baseUrl: String) = module {
     factory {
         get<Retrofit>().create(ApiClients::class.java)
     }
+
+    single<MostPopularArticlesRemoteDataSource> { MostPopularArticlesRemoteDataSourceImpl(apiClients = get()) }
 }

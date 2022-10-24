@@ -1,13 +1,8 @@
-package com.example.nytimes.data.remote.network
+package com.example.nytimes.data.remote.datasource
 
 import com.example.nytimes.data.model.response.MostPopularArticlesResponse
-import com.example.nytimes.data.remote.MOST_POPULAR
 import retrofit2.Response
-import retrofit2.http.GET
 
-interface ApiClients {
-
-    @GET(MOST_POPULAR)
+interface MostPopularArticlesRemoteDataSource {
     suspend fun getMostPopularArticles(): Response<MostPopularArticlesResponse>
-
 }

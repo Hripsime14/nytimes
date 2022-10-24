@@ -48,31 +48,21 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
 
-    //activity fragment
-    implementation "androidx.activity:activity-ktx:$ui_ktx_version"
-    implementation "androidx.fragment:fragment-ktx:$ui_ktx_version"
 
     //coroutines
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1"
 
-    //navigation components
-    implementation "androidx.navigation:navigation-runtime-ktx:$nav_component_version"
-    implementation "androidx.navigation:navigation-fragment-ktx:$nav_component_version"
-    implementation "androidx.navigation:navigation-ui-ktx:$nav_component_version"
 
     //koin
     implementation "io.insert-koin:koin-core:$koin_version"
     implementation "io.insert-koin:koin-android:$koin_version"
-    //navigation graph
-    implementation "io.insert-koin:koin-androidx-navigation:$koin_version"
-
-    //datastore
-    implementation "androidx.datastore:datastore-core:$datastore_version"
-    implementation "androidx.datastore:datastore-preferences:$datastore_version"
 
     //retrofit
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
     implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
+
+    //glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
 }
