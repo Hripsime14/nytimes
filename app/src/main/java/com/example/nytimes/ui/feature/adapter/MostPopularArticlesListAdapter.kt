@@ -68,7 +68,7 @@ class MostPopularArticlesListAdapter: ListAdapter<Result, MostPopularArticlesLis
                 .circleCrop()
                 .placeholder(R.mipmap.ic_launcher_round)
 
-            image?.let { Glide.with(it).load(currentArticle.media[0].mediaMetadataList[0].url).apply(options).into(image!!) }
+                image?.let { Glide.with(it).load(currentArticle.media.firstOrNull()?.mediaMetadataList?.firstOrNull()?.url).apply(options).into(image!!) }
         }
     }
 
